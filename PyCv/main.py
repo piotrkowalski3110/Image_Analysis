@@ -1,32 +1,26 @@
 import cv2
+import matplotlib.pyplot as plt
 import numpy as np
 
-# Let's load a simple image with 3 black squares
-image = cv2.imread('./DIBCO/H04.png')
-cv2.waitKey(0)
+IMG = cv2.imread("E09.bmp")
 
-# Grayscale
-gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+kernel = np.ones((3, 3), np.uint8)
 
-# Find Canny edges
-edged = cv2.Canny(gray, 30, 200)
-cv2.waitKey(0)
+base = IMG.copy()
+[dx, dy, dz] = base.shape
 
-# Finding Contours
-# Use a copy of the image e.g. edged.copy()
-# since findContours alters the image
-contours, hierarchy = cv2.findContours(edged,
-                                       cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_NONE)
+operator = base.copy()
+operator[1:dx-1, 1:dy-1] = 0
 
-cv2.imshow('Canny Edges After Contouring', edged)
-cv2.waitKey(0)
+while True:
+    oldOperator = operator.copy()
+    operator = cv2.dilate(operator, kernel, iterations=1)
+    operator = cv2.bitwise_and(operator, base)
 
-print("Number of Contours found = " + str(len(contours)))
+    if(np.array_equal(operator, oldOperator)):
+        break
 
-# Draw all contours
-# -1 signifies drawing all contours
-cv2.drawContours(image, contours, -1, (0, 255, 0), 3)
-
-cv2.imshow('Contours', image)
+cv2.imshow("Result", operator)
+cv2.imshow("Base", IMG)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
