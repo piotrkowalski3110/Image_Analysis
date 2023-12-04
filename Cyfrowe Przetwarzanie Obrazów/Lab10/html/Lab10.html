@@ -1,0 +1,561 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <!--
+This HTML was auto-generated from MATLAB code.
+To make changes, update the MATLAB code and republish this document.
+      --><title>Lab10</title><meta name="generator" content="MATLAB 9.13"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2023-05-25"><meta name="DC.source" content="Lab10.m"><style type="text/css">
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+
+html { min-height:100%; margin-bottom:1px; }
+html body { height:100%; margin:0px; font-family:Arial, Helvetica, sans-serif; font-size:10px; color:#000; line-height:140%; background:#fff none; overflow-y:scroll; }
+html body td { vertical-align:top; text-align:left; }
+
+h1 { padding:0px; margin:0px 0px 25px; font-family:Arial, Helvetica, sans-serif; font-size:1.5em; color:#d55000; line-height:100%; font-weight:normal; }
+h2 { padding:0px; margin:0px 0px 8px; font-family:Arial, Helvetica, sans-serif; font-size:1.2em; color:#000; font-weight:bold; line-height:140%; border-bottom:1px solid #d6d4d4; display:block; }
+h3 { padding:0px; margin:0px 0px 5px; font-family:Arial, Helvetica, sans-serif; font-size:1.1em; color:#000; font-weight:bold; line-height:140%; }
+
+a { color:#005fce; text-decoration:none; }
+a:hover { color:#005fce; text-decoration:underline; }
+a:visited { color:#004aa0; text-decoration:none; }
+
+p { padding:0px; margin:0px 0px 20px; }
+img { padding:0px; margin:0px 0px 20px; border:none; }
+p img, pre img, tt img, li img, h1 img, h2 img { margin-bottom:0px; }
+
+ul { padding:0px; margin:0px 0px 20px 23px; list-style:square; }
+ul li { padding:0px; margin:0px 0px 7px 0px; }
+ul li ul { padding:5px 0px 0px; margin:0px 0px 7px 23px; }
+ul li ol li { list-style:decimal; }
+ol { padding:0px; margin:0px 0px 20px 0px; list-style:decimal; }
+ol li { padding:0px; margin:0px 0px 7px 23px; list-style-type:decimal; }
+ol li ol { padding:5px 0px 0px; margin:0px 0px 7px 0px; }
+ol li ol li { list-style-type:lower-alpha; }
+ol li ul { padding-top:7px; }
+ol li ul li { list-style:square; }
+
+.content { font-size:1.2em; line-height:140%; padding: 20px; }
+
+pre, code { font-size:12px; }
+tt { font-size: 1.2em; }
+pre { margin:0px 0px 20px; }
+pre.codeinput { padding:10px; border:1px solid #d3d3d3; background:#f7f7f7; }
+pre.codeoutput { padding:10px 11px; margin:0px 0px 20px; color:#4c4c4c; }
+pre.error { color:red; }
+
+@media print { pre.codeinput, pre.codeoutput { word-wrap:break-word; width:100%; } }
+
+span.keyword { color:#0000FF }
+span.comment { color:#228B22 }
+span.string { color:#A020F0 }
+span.untermstring { color:#B20000 }
+span.syscmd { color:#B28C00 }
+span.typesection { color:#A0522D }
+
+.footer { width:auto; padding:10px 0px; margin:25px 0px 0px; border-top:1px dotted #878787; font-size:0.8em; line-height:140%; font-style:italic; color:#878787; text-align:left; float:none; }
+.footer p { margin:0px; }
+.footer a { color:#878787; }
+.footer a:hover { color:#878787; text-decoration:underline; }
+.footer a:visited { color:#878787; }
+
+table th { padding:7px 5px; text-align:left; vertical-align:middle; border: 1px solid #d6d4d4; font-weight:bold; }
+table td { padding:7px 5px; text-align:left; vertical-align:top; border:1px solid #d6d4d4; }
+
+
+
+
+
+  </style></head><body><div class="content"><h2>Contents</h2><div><ul><li><a href="#1">zad 1</a></li><li><a href="#2">zad 2</a></li><li><a href="#3">zad 3</a></li><li><a href="#4">zad 4</a></li><li><a href="#5">zad 5</a></li><li><a href="#6">zad 6</a></li></ul></div><h2 id="1">zad 1</h2><pre class="codeinput">clear <span class="string">all</span>; close <span class="string">all</span>; clc;
+
+ImColor = imread(<span class="string">'Lenna_(test_image).png'</span>);
+ImGray = rgb2gray(ImColor);
+
+Hist_own_gray(1,:) = ImGray(:);
+Hist_own_color_red(:,:) = ImColor(:,:,1); Hist_own_color_red = Hist_own_color_red(:);
+Hist_own_color_green(:,:) = ImColor(:,:,2); Hist_own_color_green = Hist_own_color_green(:);
+Hist_own_color_blue(:,:) = ImColor(:,:,3); Hist_own_color_blue = Hist_own_color_blue(:);
+
+imhist(ImColor); title(<span class="string">'Histogram obrazu kolorowego - wbudowana funkcja'</span>);
+figure; imhist(ImGray); title(<span class="string">'Histogram obrazu szarego - wbudowana funkcja'</span>);
+figure; histogram(Hist_own_gray,256); title(<span class="string">'Histogram obrazu szarego - w&#322;asna funkcja'</span>);
+figure; histogram(Hist_own_color_red,256); title(<span class="string">'Histogram obrazu kolorowego (RED) - w&#322;asna funkcja'</span>);
+figure; histogram(Hist_own_color_green,256); title(<span class="string">'Histogram obrazu kolorowego (GREEN) - w&#322;asna funkcja'</span>);
+figure; histogram(Hist_own_color_blue,256); title(<span class="string">'Histogram obrazu kolorowego (BLUE) - w&#322;asna funkcja'</span>);
+</pre><img vspace="5" hspace="5" src="Lab10_01.png" alt=""> <img vspace="5" hspace="5" src="Lab10_02.png" alt=""> <img vspace="5" hspace="5" src="Lab10_03.png" alt=""> <img vspace="5" hspace="5" src="Lab10_04.png" alt=""> <img vspace="5" hspace="5" src="Lab10_05.png" alt=""> <img vspace="5" hspace="5" src="Lab10_06.png" alt=""> <h2 id="2">zad 2</h2><pre class="codeinput">clear <span class="string">all</span>; close <span class="string">all</span>; clc;
+
+ImCol = imread(<span class="string">'Lenna_(test_image).png'</span>);
+ImGray = rgb2gray(ImCol);
+
+HistGray = imhist(ImGray);
+HistCol = imhist(ImCol);
+
+Hist_Gray_cum = cumsum(HistGray);
+Hist_Col_cum = cumsum(HistCol);
+
+Hist_Gray_cum = round(Hist_Gray_cum/(size(ImGray,1)*size(ImGray,2))*255);
+Hist_Col_cum = round(Hist_Col_cum/(size(ImCol,1)*size(ImCol,2))*255);
+
+figure; bar(Hist_Gray_cum); title(<span class="string">'Kumulacyjny histogram obrazu w odcieniach szaro&#347;ci'</span>);
+figure; bar(Hist_Col_cum); title(<span class="string">'Kumulacyjny histogram obrazu kolorowego'</span>);
+</pre><img vspace="5" hspace="5" src="Lab10_07.png" alt=""> <img vspace="5" hspace="5" src="Lab10_08.png" alt=""> <h2 id="3">zad 3</h2><pre class="codeinput">clear <span class="string">all</span>; close <span class="string">all</span>; clc;
+
+ImColor = imread(<span class="string">'Lenna_(test_image).png'</span>);
+ImGray = rgb2gray(ImColor);
+
+b = 100; <span class="comment">% przesuni&#281;cie w lewo powoduje zmniejszenie jasno&#347;ci, a w prawo rozja&#347;nienie obrazu</span>
+LUT = zeros(1,256);
+
+<span class="keyword">for</span> i=1:256
+    helperVal = (i-1) + b;
+    <span class="keyword">if</span> helperVal &lt; 0
+        LUT(i) = 0;
+    <span class="keyword">elseif</span> helperVal &gt; 255
+        LUT(i) = 255;
+    <span class="keyword">else</span>
+        LUT(i) = helperVal;
+    <span class="keyword">end</span>
+<span class="keyword">end</span>
+
+<span class="keyword">for</span> y=1:size(ImGray,2)
+    <span class="keyword">for</span> x=1:size(ImGray,1)
+        ImGray_Shift(x,y) = LUT(ImGray(x,y));
+        ImColor_Shift(x,y,:) = LUT(ImColor(x,y,:));
+    <span class="keyword">end</span>
+<span class="keyword">end</span>
+
+montage({ImGray,uint8(ImGray_Shift),ImColor,uint8(ImColor_Shift)},<span class="string">"Size"</span>,[2 2]); title(<span class="string">'Obraz w odcieniach szaro&#347;ci i kolorowy po przesuni&#281;ciu o '</span> + string(b));
+</pre><img vspace="5" hspace="5" src="Lab10_09.png" alt=""> <h2 id="4">zad 4</h2><pre class="codeinput">clear <span class="string">all</span>; close <span class="string">all</span>; clc;
+
+ImColor = imread(<span class="string">'Lenna_(test_image).png'</span>);
+ImGray = rgb2gray(ImColor);
+
+HistGray = imhist(ImGray);
+HistColor = imhist(ImColor);
+
+minImg = min(min(ImGray));
+maxImg = max(max(ImGray));
+
+minImgColor = min(min(ImColor));
+maxImgColor = max(max(ImColor));
+
+<span class="keyword">for</span> y=1:size(ImGray,2)
+    <span class="keyword">for</span> x=1:size(ImGray,1)
+        ImGray_second(x,y) = (255/(maxImg-minImg))*(ImGray(x,y)-minImg);
+        <span class="keyword">for</span> z=1:3
+            ImColor_second(x,y,z) = (255/(maxImgColor(z)-minImgColor(z)))*(ImColor(x,y,z)-minImgColor(z));
+        <span class="keyword">end</span>
+    <span class="keyword">end</span>
+<span class="keyword">end</span>
+
+montage({ImGray,ImGray_second,ImColor,ImColor_second},<span class="string">"Size"</span>,[2 2]);
+figure; imhist(ImGray); title(<span class="string">'Histogram bazowego obrazu w odcieniach szaro&#347;ci'</span>);
+figure; imhist(ImGray_second); title(<span class="string">'Histogram rozszerzony obrazu w odcieniach szaro&#347;ci'</span>);
+figure; imhist(ImColor); title(<span class="string">'Histogram bazowego obrazu kolorowego'</span>);
+figure; imhist(ImColor_second); title(<span class="string">'Histogram rozszerzony obrazu kolorowego'</span>);
+</pre><img vspace="5" hspace="5" src="Lab10_10.png" alt=""> <img vspace="5" hspace="5" src="Lab10_11.png" alt=""> <img vspace="5" hspace="5" src="Lab10_12.png" alt=""> <img vspace="5" hspace="5" src="Lab10_13.png" alt=""> <img vspace="5" hspace="5" src="Lab10_14.png" alt=""> <h2 id="5">zad 5</h2><pre class="codeinput">clear <span class="string">all</span>; close <span class="string">all</span>; clc;
+
+rangeMin = 255;
+rangeMax = 376;
+
+ImColor = imread(<span class="string">'Lenna_(test_image).png'</span>);
+ImGray = rgb2gray(ImColor);
+
+GrayArray(1,:) = ImGray(:);
+GrayArray = sort(GrayArray)';
+[ImVectGray, VectValGray] = groupcounts(GrayArray);
+
+ColorRedArray_Base = ImColor(:,:,1);
+ColorRedArray(1,:) = ColorRedArray_Base(:);
+ColorRedArray = sort(ColorRedArray)';
+[ImVectRed, VectValRed] = groupcounts(ColorRedArray);
+
+ColorGreenArray_Base = ImColor(:,:,2);
+ColorGreenArray(1,:) = ColorGreenArray_Base(:);
+ColorGreenArray = sort(ColorGreenArray)';
+[ImVectGreen, VectValGreen] = groupcounts(ColorGreenArray);
+
+ColorBlueArray_Base = ImColor(:,:,3);
+ColorBlueArray(1,:) = ColorBlueArray_Base(:);
+ColorBlueArray = sort(ColorBlueArray)';
+[ImVectBlue, VectValBlue] = groupcounts(ColorBlueArray);
+
+<span class="keyword">for</span> i=1:size(ImVectGray)
+    <span class="keyword">if</span> ImVectGray(i) &gt;= rangeMin
+        setMinGray = VectValGray(i);
+        <span class="keyword">break</span>;
+    <span class="keyword">end</span>
+<span class="keyword">end</span>
+
+<span class="keyword">for</span> j=size(ImVectGray):-1:1
+    <span class="keyword">if</span> ImVectGray(j) &gt;= rangeMax
+        setMaxGray = VectValGray(j);
+        <span class="keyword">break</span>;
+    <span class="keyword">end</span>
+<span class="keyword">end</span>
+
+<span class="keyword">for</span> i=1:size(ImVectRed)
+    <span class="keyword">if</span> ImVectRed(i) &gt;= rangeMin
+        setMinRed = VectValRed(i);
+        <span class="keyword">break</span>;
+    <span class="keyword">end</span>
+<span class="keyword">end</span>
+
+<span class="keyword">for</span> j=size(ImVectRed):-1:1
+    <span class="keyword">if</span> ImVectRed(j) &gt;= rangeMax
+        setMaxRed = VectValRed(j);
+        <span class="keyword">break</span>;
+    <span class="keyword">end</span>
+<span class="keyword">end</span>
+
+<span class="keyword">for</span> i=1:size(ImVectGreen)
+    <span class="keyword">if</span> ImVectGreen(i) &gt;= rangeMin
+        setMinGreen = VectValGreen(i);
+        <span class="keyword">break</span>;
+    <span class="keyword">end</span>
+<span class="keyword">end</span>
+
+<span class="keyword">for</span> j=size(ImVectGreen):-1:1
+    <span class="keyword">if</span> ImVectGreen(j) &gt;= rangeMax
+        setMaxGreen = VectValGreen(j);
+        <span class="keyword">break</span>;
+    <span class="keyword">end</span>
+<span class="keyword">end</span>
+
+<span class="keyword">for</span> i=1:size(ImVectBlue)
+    <span class="keyword">if</span> ImVectBlue(i) &gt;= rangeMin
+        setMinBlue = VectValBlue(i);
+        <span class="keyword">break</span>;
+    <span class="keyword">end</span>
+<span class="keyword">end</span>
+
+<span class="keyword">for</span> j=size(ImVectBlue):-1:1
+    <span class="keyword">if</span> ImVectBlue(j) &gt;= rangeMax
+        setMaxBlue = VectValBlue(j);
+        <span class="keyword">break</span>;
+    <span class="keyword">end</span>
+<span class="keyword">end</span>
+
+<span class="keyword">for</span> y=1:size(ImGray,2)
+    <span class="keyword">for</span> x=1:size(ImGray,1)
+        ImGray_second(x,y) = (255/(setMaxGray-setMinGray))*(ImGray(x,y)-setMinGray);
+        ImCol_second(x,y,1) = (255/(setMaxRed-setMinRed))*(ImColor(x,y,1)-setMinRed);
+        ImCol_second(x,y,2) = (255/(setMaxGreen-setMinGreen))*(ImColor(x,y,2)-setMinGreen);
+        ImCol_second(x,y,3) = (255/(setMaxBlue-setMinBlue))*(ImColor(x,y,3)-setMinBlue);
+    <span class="keyword">end</span>
+<span class="keyword">end</span>
+
+montage({ImGray,ImGray_second},<span class="string">"Size"</span>,[2 1]);
+figure; montage({ImColor,ImCol_second},<span class="string">"Size"</span>,[2 1]);
+figure; imhist(ImGray); title(<span class="string">'Histogram bazowego obrazu w odcieniach szaro&#347;ci'</span>);
+figure; imhist(ImGray_second); title(<span class="string">'Histogram rozszerzony obrazu w odcieniach szaro&#347;ci'</span>);
+figure; imhist(ImColor); title(<span class="string">'Histogram bazowego obrazu w kolorze'</span>);
+figure; imhist(ImCol_second); title(<span class="string">'Histogram rozszerzony obrazu w kolorze'</span>);
+</pre><img vspace="5" hspace="5" src="Lab10_15.png" alt=""> <img vspace="5" hspace="5" src="Lab10_16.png" alt=""> <img vspace="5" hspace="5" src="Lab10_17.png" alt=""> <img vspace="5" hspace="5" src="Lab10_18.png" alt=""> <img vspace="5" hspace="5" src="Lab10_19.png" alt=""> <img vspace="5" hspace="5" src="Lab10_20.png" alt=""> <h2 id="6">zad 6</h2><pre class="codeinput">clear <span class="string">all</span>; close <span class="string">all</span>; clc;
+
+ImColor = imread(<span class="string">'Lenna_(test_image).png'</span>);
+ImGray = rgb2gray(ImColor);
+
+R = zeros(1,256);
+G = zeros(1,256);
+B = zeros(1,256);
+GR = zeros(1,256);
+nmbPixels = size(ImGray,1)*size(ImGray,2);
+
+<span class="keyword">for</span> y=1:size(ImColor,2)
+    <span class="keyword">for</span> x=1:size(ImColor,1)
+
+        R(ImColor(x,y,1)) = R(ImColor(x,y,1)) + 1;
+        G(ImColor(x,y,2)) = G(ImColor(x,y,2)) + 1;
+        B(ImColor(x,y,3)) = B(ImColor(x,y,3)) + 1;
+        GR(ImGray(x,y)) = GR(ImGray(x,y)) + 1;
+    <span class="keyword">end</span>
+<span class="keyword">end</span>
+
+<span class="keyword">for</span> n=1:256
+    DR(n) = sum(R(1:n))/nmbPixels;
+    DG(n) = sum(G(1:n))/nmbPixels;
+    DB(n) = sum(B(1:n))/nmbPixels;
+    DGR(n) = sum(GR(1:n))/nmbPixels;
+<span class="keyword">end</span>
+
+RI = find(DR,1); DR_first = DR(RI);
+GI = find(DG,1); DG_first = DG(GI);
+BI = find(DB,1); DB_first = DB(BI);
+GRI = find(DGR,1); DGR_first = DGR(GRI);
+
+<span class="keyword">for</span> i=1:256
+    R_LUT(i) = round(((DR(i)-DR_first)/(1-DR_first))*255);
+    G_LUT(i) = round(((DG(i)-DG_first)/(1-DG_first))*255);
+    B_LUT(i) = round(((DB(i)-DB_first)/(1-DB_first))*255);
+    GR_LUT(i) = round(((DGR(i)-DGR_first)/(1-DGR_first))*255);
+<span class="keyword">end</span>
+
+<span class="keyword">for</span> y=1:size(ImGray,2)
+    <span class="keyword">for</span> x=1:size(ImGray,1)
+        ImGray_second(x,y) = GR_LUT(ImGray(x,y));
+        ImColor_second(x,y,1) = R_LUT(ImColor(x,y,1));
+        ImColor_second(x,y,2) = G_LUT(ImColor(x,y,2));
+        ImColor_second(x,y,3) = B_LUT(ImColor(x,y,3));
+    <span class="keyword">end</span>
+<span class="keyword">end</span>
+
+montage({ImGray,uint8(ImGray_second), ImColor, uint8(ImColor_second)},<span class="string">"Size"</span>,[2 2]);
+figure; imhist(ImGray); title(<span class="string">'Histogram obrazu szarego pierwotnego'</span>);
+figure; imhist(uint8(ImGray_second)); title(<span class="string">'Histogram obrazu szarego po przetworzeniu'</span>);
+figure; imhist(ImColor); title(<span class="string">'Histogram obrazu kolorowego pierwotnego'</span>);
+figure; imhist(uint8(ImColor_second)); title(<span class="string">'Histogram obrazu kolorowego po przetworzeniu'</span>);
+</pre><img vspace="5" hspace="5" src="Lab10_21.png" alt=""> <img vspace="5" hspace="5" src="Lab10_22.png" alt=""> <img vspace="5" hspace="5" src="Lab10_23.png" alt=""> <img vspace="5" hspace="5" src="Lab10_24.png" alt=""> <img vspace="5" hspace="5" src="Lab10_25.png" alt=""> <p class="footer"><br><a href="https://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2022b</a><br></p></div><!--
+##### SOURCE BEGIN #####
+%% zad 1
+clear all; close all; clc;
+
+ImColor = imread('Lenna_(test_image).png');
+ImGray = rgb2gray(ImColor);
+
+Hist_own_gray(1,:) = ImGray(:);
+Hist_own_color_red(:,:) = ImColor(:,:,1); Hist_own_color_red = Hist_own_color_red(:);
+Hist_own_color_green(:,:) = ImColor(:,:,2); Hist_own_color_green = Hist_own_color_green(:);
+Hist_own_color_blue(:,:) = ImColor(:,:,3); Hist_own_color_blue = Hist_own_color_blue(:);
+
+imhist(ImColor); title('Histogram obrazu kolorowego - wbudowana funkcja');
+figure; imhist(ImGray); title('Histogram obrazu szarego - wbudowana funkcja');
+figure; histogram(Hist_own_gray,256); title('Histogram obrazu szarego - własna funkcja');
+figure; histogram(Hist_own_color_red,256); title('Histogram obrazu kolorowego (RED) - własna funkcja');
+figure; histogram(Hist_own_color_green,256); title('Histogram obrazu kolorowego (GREEN) - własna funkcja');
+figure; histogram(Hist_own_color_blue,256); title('Histogram obrazu kolorowego (BLUE) - własna funkcja');
+
+%% zad 2
+clear all; close all; clc;
+
+ImCol = imread('Lenna_(test_image).png');
+ImGray = rgb2gray(ImCol);
+
+HistGray = imhist(ImGray);
+HistCol = imhist(ImCol);
+
+Hist_Gray_cum = cumsum(HistGray);
+Hist_Col_cum = cumsum(HistCol);
+
+Hist_Gray_cum = round(Hist_Gray_cum/(size(ImGray,1)*size(ImGray,2))*255);
+Hist_Col_cum = round(Hist_Col_cum/(size(ImCol,1)*size(ImCol,2))*255);
+
+figure; bar(Hist_Gray_cum); title('Kumulacyjny histogram obrazu w odcieniach szarości');
+figure; bar(Hist_Col_cum); title('Kumulacyjny histogram obrazu kolorowego');
+
+
+%% zad 3
+clear all; close all; clc;
+
+ImColor = imread('Lenna_(test_image).png');
+ImGray = rgb2gray(ImColor);
+
+b = 100; % przesunięcie w lewo powoduje zmniejszenie jasności, a w prawo rozjaśnienie obrazu
+LUT = zeros(1,256);
+
+for i=1:256
+    helperVal = (i-1) + b;
+    if helperVal < 0
+        LUT(i) = 0;
+    elseif helperVal > 255
+        LUT(i) = 255;
+    else
+        LUT(i) = helperVal;
+    end
+end
+
+for y=1:size(ImGray,2)
+    for x=1:size(ImGray,1)
+        ImGray_Shift(x,y) = LUT(ImGray(x,y));
+        ImColor_Shift(x,y,:) = LUT(ImColor(x,y,:));
+    end
+end
+
+montage({ImGray,uint8(ImGray_Shift),ImColor,uint8(ImColor_Shift)},"Size",[2 2]); title('Obraz w odcieniach szarości i kolorowy po przesunięciu o ' + string(b));
+%% zad 4
+clear all; close all; clc;
+
+ImColor = imread('Lenna_(test_image).png');
+ImGray = rgb2gray(ImColor);
+
+HistGray = imhist(ImGray);
+HistColor = imhist(ImColor);
+
+minImg = min(min(ImGray));
+maxImg = max(max(ImGray));
+
+minImgColor = min(min(ImColor));
+maxImgColor = max(max(ImColor));
+
+for y=1:size(ImGray,2)
+    for x=1:size(ImGray,1)
+        ImGray_second(x,y) = (255/(maxImg-minImg))*(ImGray(x,y)-minImg);
+        for z=1:3
+            ImColor_second(x,y,z) = (255/(maxImgColor(z)-minImgColor(z)))*(ImColor(x,y,z)-minImgColor(z));
+        end
+    end
+end
+
+montage({ImGray,ImGray_second,ImColor,ImColor_second},"Size",[2 2]);
+figure; imhist(ImGray); title('Histogram bazowego obrazu w odcieniach szarości');
+figure; imhist(ImGray_second); title('Histogram rozszerzony obrazu w odcieniach szarości');
+figure; imhist(ImColor); title('Histogram bazowego obrazu kolorowego');
+figure; imhist(ImColor_second); title('Histogram rozszerzony obrazu kolorowego');
+%% zad 5
+clear all; close all; clc;
+
+rangeMin = 255;
+rangeMax = 376;
+
+ImColor = imread('Lenna_(test_image).png');
+ImGray = rgb2gray(ImColor);
+
+GrayArray(1,:) = ImGray(:);
+GrayArray = sort(GrayArray)';
+[ImVectGray, VectValGray] = groupcounts(GrayArray);
+
+ColorRedArray_Base = ImColor(:,:,1);
+ColorRedArray(1,:) = ColorRedArray_Base(:);
+ColorRedArray = sort(ColorRedArray)';
+[ImVectRed, VectValRed] = groupcounts(ColorRedArray);
+
+ColorGreenArray_Base = ImColor(:,:,2);
+ColorGreenArray(1,:) = ColorGreenArray_Base(:);
+ColorGreenArray = sort(ColorGreenArray)';
+[ImVectGreen, VectValGreen] = groupcounts(ColorGreenArray);
+
+ColorBlueArray_Base = ImColor(:,:,3);
+ColorBlueArray(1,:) = ColorBlueArray_Base(:);
+ColorBlueArray = sort(ColorBlueArray)';
+[ImVectBlue, VectValBlue] = groupcounts(ColorBlueArray);
+
+for i=1:size(ImVectGray)
+    if ImVectGray(i) >= rangeMin
+        setMinGray = VectValGray(i);
+        break;
+    end
+end
+
+for j=size(ImVectGray):-1:1
+    if ImVectGray(j) >= rangeMax
+        setMaxGray = VectValGray(j);
+        break;
+    end
+end
+
+for i=1:size(ImVectRed)
+    if ImVectRed(i) >= rangeMin
+        setMinRed = VectValRed(i);
+        break;
+    end
+end
+
+for j=size(ImVectRed):-1:1
+    if ImVectRed(j) >= rangeMax
+        setMaxRed = VectValRed(j);
+        break;
+    end
+end
+
+for i=1:size(ImVectGreen)
+    if ImVectGreen(i) >= rangeMin
+        setMinGreen = VectValGreen(i);
+        break;
+    end
+end
+
+for j=size(ImVectGreen):-1:1
+    if ImVectGreen(j) >= rangeMax
+        setMaxGreen = VectValGreen(j);
+        break;
+    end
+end
+
+for i=1:size(ImVectBlue)
+    if ImVectBlue(i) >= rangeMin
+        setMinBlue = VectValBlue(i);
+        break;
+    end
+end
+
+for j=size(ImVectBlue):-1:1
+    if ImVectBlue(j) >= rangeMax
+        setMaxBlue = VectValBlue(j);
+        break;
+    end
+end
+
+for y=1:size(ImGray,2)
+    for x=1:size(ImGray,1)
+        ImGray_second(x,y) = (255/(setMaxGray-setMinGray))*(ImGray(x,y)-setMinGray);
+        ImCol_second(x,y,1) = (255/(setMaxRed-setMinRed))*(ImColor(x,y,1)-setMinRed);
+        ImCol_second(x,y,2) = (255/(setMaxGreen-setMinGreen))*(ImColor(x,y,2)-setMinGreen);
+        ImCol_second(x,y,3) = (255/(setMaxBlue-setMinBlue))*(ImColor(x,y,3)-setMinBlue);
+    end
+end
+
+montage({ImGray,ImGray_second},"Size",[2 1]);
+figure; montage({ImColor,ImCol_second},"Size",[2 1]);
+figure; imhist(ImGray); title('Histogram bazowego obrazu w odcieniach szarości');
+figure; imhist(ImGray_second); title('Histogram rozszerzony obrazu w odcieniach szarości');
+figure; imhist(ImColor); title('Histogram bazowego obrazu w kolorze');
+figure; imhist(ImCol_second); title('Histogram rozszerzony obrazu w kolorze');
+
+%% zad 6
+clear all; close all; clc;
+
+ImColor = imread('Lenna_(test_image).png');
+ImGray = rgb2gray(ImColor);
+
+R = zeros(1,256);
+G = zeros(1,256);
+B = zeros(1,256);
+GR = zeros(1,256);
+nmbPixels = size(ImGray,1)*size(ImGray,2);
+
+for y=1:size(ImColor,2)
+    for x=1:size(ImColor,1)
+
+        R(ImColor(x,y,1)) = R(ImColor(x,y,1)) + 1;
+        G(ImColor(x,y,2)) = G(ImColor(x,y,2)) + 1;
+        B(ImColor(x,y,3)) = B(ImColor(x,y,3)) + 1;
+        GR(ImGray(x,y)) = GR(ImGray(x,y)) + 1;
+    end
+end
+
+for n=1:256
+    DR(n) = sum(R(1:n))/nmbPixels;
+    DG(n) = sum(G(1:n))/nmbPixels;
+    DB(n) = sum(B(1:n))/nmbPixels;
+    DGR(n) = sum(GR(1:n))/nmbPixels;
+end
+
+RI = find(DR,1); DR_first = DR(RI);
+GI = find(DG,1); DG_first = DG(GI);
+BI = find(DB,1); DB_first = DB(BI);
+GRI = find(DGR,1); DGR_first = DGR(GRI);
+
+for i=1:256
+    R_LUT(i) = round(((DR(i)-DR_first)/(1-DR_first))*255);
+    G_LUT(i) = round(((DG(i)-DG_first)/(1-DG_first))*255);
+    B_LUT(i) = round(((DB(i)-DB_first)/(1-DB_first))*255);
+    GR_LUT(i) = round(((DGR(i)-DGR_first)/(1-DGR_first))*255);
+end
+
+for y=1:size(ImGray,2)
+    for x=1:size(ImGray,1)
+        ImGray_second(x,y) = GR_LUT(ImGray(x,y));
+        ImColor_second(x,y,1) = R_LUT(ImColor(x,y,1));
+        ImColor_second(x,y,2) = G_LUT(ImColor(x,y,2));
+        ImColor_second(x,y,3) = B_LUT(ImColor(x,y,3));
+    end
+end
+
+montage({ImGray,uint8(ImGray_second), ImColor, uint8(ImColor_second)},"Size",[2 2]);
+figure; imhist(ImGray); title('Histogram obrazu szarego pierwotnego');
+figure; imhist(uint8(ImGray_second)); title('Histogram obrazu szarego po przetworzeniu');
+figure; imhist(ImColor); title('Histogram obrazu kolorowego pierwotnego');
+figure; imhist(uint8(ImColor_second)); title('Histogram obrazu kolorowego po przetworzeniu');
+##### SOURCE END #####
+--></body></html>
