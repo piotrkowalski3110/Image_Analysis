@@ -1,0 +1,1149 @@
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2024.1.11)  11 JAN 2024 16:48
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**lab4
+(./LAB4.ipynb
+LaTeX2e <2021-11-15> patch level 1
+L3 programming layer <2022-01-21>
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2  "
+      cells": [
+? 
+Missing character: There is no " ("22) in font nullfont!
+Missing character: There is no c ("63) in font nullfont!
+Missing character: There is no e ("65) in font nullfont!
+Missing character: There is no l ("6C) in font nullfont!
+Missing character: There is no l ("6C) in font nullfont!
+Missing character: There is no s ("73) in font nullfont!
+Missing character: There is no " ("22) in font nullfont!
+Missing character: There is no : ("3A) in font nullfont!
+Missing character: There is no [ ("5B) in font nullfont!
+Missing character: There is no " ("22) in font nullfont!
+Missing character: There is no c ("63) in font nullfont!
+Missing character: There is no e ("65) in font nullfont!
+Missing character: There is no l ("6C) in font nullfont!
+Missing character: There is no l ("6C) in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.4    "cell_
+             type": "code",
+? 
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 4.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 4.
+
+LaTeX Warning: Command \" invalid in math mode on input line 9.
+
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 9
+.
+(/usr/share/texmf/tex/latex/lm/ot1lmr.fd
+File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+
+LaTeX Warning: Command \" invalid in math mode on input line 9.
+
+LaTeX Font Info:    Trying to load font information for +lmr on input line 9.
+LaTeX Font Info:    No file lmr.fd. on input line 9.
+LaTeX Font Info:    Trying to load font information for +cmr on input line 9.
+LaTeX Font Info:    No file cmr.fd. on input line 9.
+
+LaTeX Font Warning: Font shape `/lmr/m/n' undefined
+(Font)              using `/cmr/m/n' instead on input line 9.
+
+
+LaTeX Font Warning: Font shape `/cmr/m/n' undefined
+(Font)              using `/cmr/m/n' instead on input line 9.
+
+! Corrupted NFSS tables.
+wrong@fontshape ...message {Corrupted NFSS tables}
+                                                  error@fontshape else let f...
+l.9     "\"\"
+             \"Importowanie potrzebnych w projekcie bibliotek\"\"\"\n",
+? 
+
+LaTeX Font Warning: Font shape `/cmr/m/n' undefined
+(Font)              using `OT1/cmr/m/n' instead on input line 9.
+
+
+LaTeX Font Warning: Font shape `/lmr/m/n' undefined
+(Font)              using `/cmr/m/n' instead on input line 9.
+
+! You can't use a prefix with `end-group character }'.
+<to be read again> 
+                   \egroup 
+l.9     "\"\"
+             \"Importowanie potrzebnych w projekcie bibliotek\"\"\"\n",
+? 
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.9     "\"\"
+             \"Importowanie potrzebnych w projekcie bibliotek\"\"\"\n",
+? 
+! Missing { inserted.
+<to be read again> 
+                   \edef 
+l.9     "\"\"
+             \"Importowanie potrzebnych w projekcie bibliotek\"\"\"\n",
+? 
+
+LaTeX Warning: Command \" invalid in math mode on input line 9.
+
+
+LaTeX Warning: Command \" invalid in math mode on input line 9.
+
+! Improper \spacefactor.
+<recently read> \spacefactor 
+                             
+l.9     "\"\"
+             \"Importowanie potrzebnych w projekcie bibliotek\"\"\"\n",
+? 
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.9     "\"\"
+             \"Importowanie potrzebnych w projekcie bibliotek\"\"\"\n",
+? 
+! Missing { inserted.
+<to be read again> 
+                   \edef 
+l.9     "\"\"
+             \"Importowanie potrzebnych w projekcie bibliotek\"\"\"\n",
+? 
+
+LaTeX Warning: Command \" invalid in math mode on input line 9.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.9     "\"\"\"I
+                mportowanie potrzebnych w projekcie bibliotek\"\"\"\n",
+? 
+
+LaTeX Warning: Command \" invalid in math mode on input line 9.
+
+! You can't use a prefix with `end-group character }'.
+<to be read again> 
+                   \egroup 
+l.9 ...wanie potrzebnych w projekcie bibliotek\"\"
+                                                  \"\n",
+? 
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.9 ...wanie potrzebnych w projekcie bibliotek\"\"
+                                                  \"\n",
+? 
+! Missing { inserted.
+<to be read again> 
+                   \begingroup 
+l.9 ...wanie potrzebnych w projekcie bibliotek\"\"
+                                                  \"\n",
+? 
+
+LaTeX Warning: Command \" invalid in math mode on input line 9.
+
+! Improper \spacefactor.
+<recently read> \spacefactor 
+                             
+l.9 ...wanie potrzebnych w projekcie bibliotek\"\"
+                                                  \"\n",
+? 
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.9 ...wanie potrzebnych w projekcie bibliotek\"\"
+                                                  \"\n",
+? 
+! Missing { inserted.
+<to be read again> 
+                   \egroup 
+l.9 ...wanie potrzebnych w projekcie bibliotek\"\"
+                                                  \"\n",
+? 
+
+LaTeX Warning: Command \" invalid in math mode on input line 9.
+
+! Undefined control sequence.
+<argument> \n 
+              
+l.9 ...e potrzebnych w projekcie bibliotek\"\"\"\n
+                                                  ",
+? 
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.9 ...e potrzebnych w projekcie bibliotek\"\"\"\n
+                                                  ",
+? 
+! Undefined control sequence.
+<argument> \n 
+              
+l.9 ...e potrzebnych w projekcie bibliotek\"\"\"\n
+                                                  ",
+? 
+! Missing { inserted.
+<to be read again> 
+                   \egroup 
+l.9 ...e potrzebnych w projekcie bibliotek\"\"\"\n
+                                                  ",
+? 
+! Undefined control sequence.
+l.10     "import cv2\n
+                      ",
+? 
+! Undefined control sequence.
+l.11     "import numpy as np\n
+                              ",
+? 
+! Undefined control sequence.
+l.12     "import matplotlib.pyplot as plt\n
+                                           ",
+? 
+! Undefined control sequence.
+l.13     "import pandas as pd\n
+                               ",
+? 
+! Undefined control sequence.
+l.14     "\n
+            ",
+? 
+! Undefined control sequence.
+l.15     "\n
+            ",
+? 
+! You can't use `macro parameter character #' in math mode.
+l.16     "#
+           Poniższa metoda to implementacja środków ciężkości z wykorzystani...
+
+? 
+! Undefined control sequence.
+l.16 ...i z wykorzystaniem funkcji cv2.moments()\n
+                                                  ",
+? 
+! You can't use `macro parameter character #' in math mode.
+l.17     "#
+           W dalszej części kodu znajduje się implementacja z wykorzystaniem...
+
+? 
+! Undefined control sequence.
+l.17 ...mentacja z wykorzystaniem własnej metody\n
+                                                  ",
+? 
+! You can't use `macro parameter character #' in math mode.
+l.18     "#
+           \n",
+? 
+! Undefined control sequence.
+l.18     "#\n
+             ",
+? 
+! You can't use `macro parameter character #' in math mode.
+l.19     "#
+           def Moment_I(self):\n",
+? 
+! Undefined control sequence.
+l.19     "#def Moment_I(self):\n
+                                ",
+? 
+! You can't use `macro parameter character #' in math mode.
+l.20     "#
+                   Operator = self.binImage.copy()\n",
+? 
+! Undefined control sequence.
+l.20 ...#        Operator = self.binImage.copy()\n
+                                                  ",
+? 
+! You can't use `macro parameter character #' in math mode.
+l.21     "#
+                   M = cv2.moments(Operator)\n",
+? 
+! Undefined control sequence.
+l.21     "#        M = cv2.moments(Operator)\n
+                                              ",
+? 
+! You can't use `macro parameter character #' in math mode.
+l.22     "#
+                   cX = M[\"m10\"] / M[\"m00\"]\n",
+? 
+
+LaTeX Warning: Command \" invalid in math mode on input line 22.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.22     "#        cX = M[\"m
+                             10\"] / M[\"m00\"]\n",
+? 
+
+LaTeX Warning: Command \" invalid in math mode on input line 22.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.22     "#        cX = M[\"m10\"]
+                                   / M[\"m00\"]\n",
+? 
+
+LaTeX Warning: Command \" invalid in math mode on input line 22.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.22     "#        cX = M[\"m10\"] / M[\"m
+                                          00\"]\n",
+? 
+
+LaTeX Warning: Command \" invalid in math mode on input line 22.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.22     "#        cX = M[\"m10\"] / M[\"m00\"]
+                                               \n",
+? 
+! Undefined control sequence.
+l.22     "#        cX = M[\"m10\"] / M[\"m00\"]\n
+                                                 ",
+? 
+! You can't use `macro parameter character #' in math mode.
+l.23     "#
+                   cY = M[\"m01\"] / M[\"m00\"]\n",
+? 
+
+LaTeX Warning: Command \" invalid in math mode on input line 23.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.23     "#        cY = M[\"m
+                             01\"] / M[\"m00\"]\n",
+? 
+
+LaTeX Warning: Command \" invalid in math mode on input line 23.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.23     "#        cY = M[\"m01\"]
+                                   / M[\"m00\"]\n",
+? 
+
+LaTeX Warning: Command \" invalid in math mode on input line 23.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.23     "#        cY = M[\"m01\"] / M[\"m
+                                          00\"]\n",
+? 
+
+LaTeX Warning: Command \" invalid in math mode on input line 23.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.23     "#        cY = M[\"m01\"] / M[\"m00\"]
+                                               \n",
+? 
+! Undefined control sequence.
+l.23     "#        cY = M[\"m01\"] / M[\"m00\"]\n
+                                                 ",
+? 
+! You can't use `macro parameter character #' in math mode.
+l.24     "#
+                   return [cX, cY]"
+? 
+
+LaTeX Warning: Command \" invalid in math mode on input line 33.
+
+! You can't use a prefix with `end-group character }'.
+<to be read again> 
+                   \egroup 
+l.33     "\"\"
+              \"\n",
+? 
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.33     "\"\"
+              \"\n",
+? 
+! Missing { inserted.
+<to be read again> 
+                   \begingroup 
+l.33     "\"\"
+              \"\n",
+? 
+
+LaTeX Warning: Command \" invalid in math mode on input line 33.
+
+! Improper \spacefactor.
+<recently read> \spacefactor 
+                             
+l.33     "\"\"
+              \"\n",
+? 
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.33     "\"\"
+              \"\n",
+? 
+! Missing { inserted.
+<to be read again> 
+                   \egroup 
+l.33     "\"\"
+              \"\n",
+? 
+
+LaTeX Warning: Command \" invalid in math mode on input line 33.
+
+! Undefined control sequence.
+<argument> \n 
+              
+l.33     "\"\"\"\n
+                  ",
+? 
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.33     "\"\"\"\n
+                  ",
+? 
+! Undefined control sequence.
+<argument> \n 
+              
+l.33     "\"\"\"\n
+                  ",
+? 
+! Missing { inserted.
+<to be read again> 
+                   \egroup 
+l.33     "\"\"\"\n
+                  ",
+? 
+! Undefined control sequence.
+l.34 ...spółczynników kształtu figury na obrazie\n
+                                                  ",
+? 
+! Undefined control sequence.
+l.35     "baseImage - obraz bazowy (wejściowy)\n
+                                                ",
+? 
+! Undefined control sequence.
+l.36 ...e - obraz po konwersji do skali szarości\n
+                                                  ",
+? 
+! Undefined control sequence.
+l.37     "binImage - obraz po binaryzacji OTSU\n
+                                                ",
+? 
+
+LaTeX Warning: Command \" invalid in math mode on input line 38.
+
+! You can't use a prefix with `end-group character }'.
+<to be read again> 
+                   \egroup 
+l.38     "\"\"
+              \"\n",
+? 
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.38     "\"\"
+              \"\n",
+? 
+! Missing { inserted.
+<to be read again> 
+                   \begingroup 
+l.38     "\"\"
+              \"\n",
+? 
+
+LaTeX Warning: Command \" invalid in math mode on input line 38.
+
+! Improper \spacefactor.
+<recently read> \spacefactor 
+                             
+l.38     "\"\"
+              \"\n",
+? 
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.38     "\"\"
+              \"\n",
+? 
+! Missing { inserted.
+<to be read again> 
+                   \egroup 
+l.38     "\"\"
+              \"\n",
+? 
+
+LaTeX Warning: Command \" invalid in math mode on input line 38.
+
+! Undefined control sequence.
+<argument> \n 
+              
+l.38     "\"\"\"\n
+                  ",
+? 
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.38     "\"\"\"\n
+                  ",
+? 
+! Undefined control sequence.
+<argument> \n 
+              
+l.38     "\"\"\"\n
+                  ",
+? 
+! Missing { inserted.
+<to be read again> 
+                   \egroup 
+l.38     "\"\"\"\n
+                  ",
+? 
+! Undefined control sequence.
+l.39     "class ImageShape:\n
+                             ",
+? 
+! Missing { inserted.
+<to be read again> 
+                   _
+l.40     "    def __
+                    init__(self, srcImage):\n",
+? 
+! Missing { inserted.
+<to be read again> 
+                   _
+l.40     "    def __init__
+                          (self, srcImage):\n",
+? 
+! Undefined control sequence.
+l.40     "    def __init__(self, srcImage):\n
+                                             ",
+? 
+! Undefined control sequence.
+l.41 ...        self.baseImage = srcImage.copy()\n
+                                                  ",
+? 
+! Undefined control sequence.
+l.42 ...olor(self.baseImage, cv2.COLOR_BGR2GRAY)\n
+                                                  ",
+? 
+! Undefined control sequence.
+l.43 ... 1, cv2.THRESH_BINARY | cv2.THRESH_OTSU)\n
+                                                  ",
+? 
+! Undefined control sequence.
+l.44     "\n
+            ",
+? 
+
+LaTeX Warning: Command \" invalid in math mode on input line 45.
+
+! You can't use a prefix with `end-group character }'.
+<to be read again> 
+                   \egroup 
+l.45     "    \"\"
+                  \"\n",
+? 
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.45     "    \"\"
+                  \"\n",
+? 
+! Missing { inserted.
+<to be read again> 
+                   \begingroup 
+l.45     "    \"\"
+                  \"\n",
+? 
+
+LaTeX Warning: Command \" invalid in math mode on input line 45.
+
+! Improper \spacefactor.
+<recently read> \spacefactor 
+                             
+l.45     "    \"\"
+                  \"\n",
+? 
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.45     "    \"\"
+                  \"\n",
+? 
+! Missing { inserted.
+<to be read again> 
+                   \egroup 
+l.45     "    \"\"
+                  \"\n",
+? 
+
+LaTeX Warning: Command \" invalid in math mode on input line 45.
+
+! Undefined control sequence.
+<argument> \n 
+              
+l.45     "    \"\"\"\n
+                      ",
+? 
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.45     "    \"\"\"\n
+                      ",
+? 
+! Undefined control sequence.
+<argument> \n 
+              
+l.45     "    \"\"\"\n
+                      ",
+? 
+! Missing { inserted.
+<to be read again> 
+                   \egroup 
+l.45     "    \"\"\"\n
+                      ",
+? 
+! Undefined control sequence.
+l.46 ...dy tworzącej kontur na potrzeby obliczeń\n
+                                                  ",
+? 
+! Undefined control sequence.
+l.47 ...- element strukturalny złożony z jedynek\n
+                                                  ",
+? 
+! Undefined control sequence.
+l.48 ..."    Ero - obraz zbinaryzowany po erozji\n
+                                                  ",
+? 
+! Undefined control sequence.
+l.49 ...zyskany przez odjęcie bazowego i erozji)\n
+                                                  ",
+? 
+
+LaTeX Warning: Command \" invalid in math mode on input line 50.
+
+! You can't use a prefix with `end-group character }'.
+<to be read again> 
+                   \egroup 
+l.50     "    \"\"
+                  \"\n",
+? 
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.50     "    \"\"
+                  \"\n",
+? 
+! Missing { inserted.
+<to be read again> 
+                   \begingroup 
+l.50     "    \"\"
+                  \"\n",
+? 
+
+LaTeX Warning: Command \" invalid in math mode on input line 50.
+
+! Improper \spacefactor.
+<recently read> \spacefactor 
+                             
+l.50     "    \"\"
+                  \"\n",
+? 
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.50     "    \"\"
+                  \"\n",
+? 
+! Missing { inserted.
+<to be read again> 
+                   \egroup 
+l.50     "    \"\"
+                  \"\n",
+? 
+
+LaTeX Warning: Command \" invalid in math mode on input line 50.
+
+! Undefined control sequence.
+<argument> \n 
+              
+l.50     "    \"\"\"\n
+                      ",
+? 
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.50     "    \"\"\"\n
+                      ",
+? 
+! Undefined control sequence.
+<argument> \n 
+              
+l.50     "    \"\"\"\n
+                      ",
+? 
+! Missing { inserted.
+<to be read again> 
+                   \egroup 
+l.50     "    \"\"\"\n
+                      ",
+? 
+! Undefined control sequence.
+l.51     "    def makeContour(self):\n
+                                      ",
+? 
+! Undefined control sequence.
+l.52 ...      kernel = np.ones((3, 3), np.uint8)\n
+                                                  ",
+? 
+! Undefined control sequence.
+l.53 ...ode(self.binImage, kernel, iterations=1)\n
+                                                  ",
+? 
+! Undefined control sequence.
+l.54 ...     Result = self.binImage.copy() - Ero\n
+                                                  ",
+? 
+! Undefined control sequence.
+l.55     "        return Result\n
+                                 ",
+? 
+! Undefined control sequence.
+l.56     "\n
+            ",
+? 
+
+LaTeX Warning: Command \" invalid in math mode on input line 57.
+
+! You can't use a prefix with `end-group character }'.
+<to be read again> 
+                   \egroup 
+l.57     "    \"\"
+                  \"\n",
+? 
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.57     "    \"\"
+                  \"\n",
+? 
+! Missing { inserted.
+<to be read again> 
+                   \begingroup 
+l.57     "    \"\"
+                  \"\n",
+? 
+
+LaTeX Warning: Command \" invalid in math mode on input line 57.
+
+! Improper \spacefactor.
+<recently read> \spacefactor 
+                             
+l.57     "    \"\"
+                  \"\n",
+? 
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.57     "    \"\"
+                  \"\n",
+? 
+! Missing { inserted.
+<to be read again> 
+                   \egroup 
+l.57     "    \"\"
+                  \"\n",
+? 
+
+LaTeX Warning: Command \" invalid in math mode on input line 57.
+
+! Undefined control sequence.
+<argument> \n 
+              
+l.57     "    \"\"\"\n
+                      ",
+? 
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.57     "    \"\"\"\n
+                      ",
+? 
+! Undefined control sequence.
+<argument> \n 
+              
+l.57     "    \"\"\"\n
+                      ",
+? 
+! Missing { inserted.
+<to be read again> 
+                   \egroup 
+l.57     "    \"\"\"\n
+                      ",
+? 
+! Undefined control sequence.
+l.58 ...ody szukającej punktu startowego dla FCC\n
+                                                  ",
+? 
+
+LaTeX Warning: Command \" invalid in math mode on input line 59.
+
+! You can't use a prefix with `end-group character }'.
+<to be read again> 
+                   \egroup 
+l.59     "    \"\"
+                  \"\n",
+? 
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.59     "    \"\"
+                  \"\n",
+? 
+! Missing { inserted.
+<to be read again> 
+                   \begingroup 
+l.59     "    \"\"
+                  \"\n",
+? 
+
+LaTeX Warning: Command \" invalid in math mode on input line 59.
+
+! Improper \spacefactor.
+<recently read> \spacefactor 
+                             
+l.59     "    \"\"
+                  \"\n",
+? 
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.59     "    \"\"
+                  \"\n",
+? 
+! Missing { inserted.
+<to be read again> 
+                   \egroup 
+l.59     "    \"\"
+                  \"\n",
+? 
+
+LaTeX Warning: Command \" invalid in math mode on input line 59.
+
+! Undefined control sequence.
+<argument> \n 
+              
+l.59     "    \"\"\"\n
+                      ",
+? 
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.59     "    \"\"\"\n
+                      ",
+? 
+! Undefined control sequence.
+<argument> \n 
+              
+l.59     "    \"\"\"\n
+                      ",
+? 
+! Missing { inserted.
+<to be read again> 
+                   \egroup 
+l.59     "    \"\"\"\n
+                      ",
+? 
+! Undefined control sequence.
+l.60     "    def getStartPos(self, srcImage):\n
+                                                ",
+? 
+! Undefined control sequence.
+l.61 ...      for i in range(srcImage.shape[0]):\n
+                                                  ",
+? 
+! Undefined control sequence.
+l.62 ...      for j in range(srcImage.shape[1]):\n
+                                                  ",
+? 
+! Undefined control sequence.
+l.63     "                getVal = srcImage[i,j]\n
+                                                  ",
+? 
+! Undefined control sequence.
+l.64     "                if(0 < getVal):\n
+                                           ",
+? 
+! Undefined control sequence.
+l.65 ...                  startPosition = (i, j)\n
+                                                  ",
+? 
+! Undefined control sequence.
+l.66 ...                    return startPosition\n
+                                                  ",
+? 
+! Undefined control sequence.
+l.67     "\n
+            ",
+? 
+
+LaTeX Warning: Command \" invalid in math mode on input line 68.
+
+! You can't use a prefix with `end-group character }'.
+<to be read again> 
+                   \egroup 
+l.68     "    \"\"
+                  \"\n",
+? 
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.68     "    \"\"
+                  \"\n",
+? 
+! Missing { inserted.
+<to be read again> 
+                   \begingroup 
+l.68     "    \"\"
+                  \"\n",
+? 
+
+LaTeX Warning: Command \" invalid in math mode on input line 68.
+
+! Improper \spacefactor.
+<recently read> \spacefactor 
+                             
+l.68     "    \"\"
+                  \"\n",
+? 
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.68     "    \"\"
+                  \"\n",
+? 
+! Missing { inserted.
+<to be read again> 
+                   \egroup 
+l.68     "    \"\"
+                  \"\n",
+? 
+
+LaTeX Warning: Command \" invalid in math mode on input line 68.
+
+! Undefined control sequence.
+<argument> \n 
+              
+l.68     "    \"\"\"\n
+                      ",
+? 
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.68     "    \"\"\"\n
+                      ",
+? 
+! Undefined control sequence.
+<argument> \n 
+              
+l.68     "    \"\"\"\n
+                      ",
+? 
+! Missing { inserted.
+<to be read again> 
+                   \egroup 
+l.68     "    \"\"\"\n
+                      ",
+? 
+! Undefined control sequence.
+l.69 ...ratorium w celu obliczania obwodu figury\n
+                                                  ",
+? 
+
+LaTeX Warning: Command \" invalid in math mode on input line 70.
+
+! You can't use a prefix with `end-group character }'.
+<to be read again> 
+                   \egroup 
+l.70     "    \"\"
+                  \"\n",
+? 
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.70     "    \"\"
+                  \"\n",
+? 
+! Missing { inserted.
+<to be read again> 
+                   \begingroup 
+l.70     "    \"\"
+                  \"\n",
+? 
+
+LaTeX Warning: Command \" invalid in math mode on input line 70.
+
+! Improper \spacefactor.
+<recently read> \spacefactor 
+                             
+l.70     "    \"\"
+                  \"\n",
+? 
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.70     "    \"\"
+                  \"\n",
+? 
+! Missing { inserted.
+<to be read again> 
+                   \egroup 
+l.70     "    \"\"
+                  \"\n",
+? 
+
+LaTeX Warning: Command \" invalid in math mode on input line 70.
+
+! Undefined control sequence.
+<argument> \n 
+              
+l.70     "    \"\"\"\n
+                      ",
+? 
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.70     "    \"\"\"\n
+                      ",
+? 
+! Undefined control sequence.
+<argument> \n 
+              
+l.70     "    \"\"\"\n
+                      ",
+? 
+! Missing { inserted.
+<to be read again> 
+                   \egroup 
+l.70     "    \"\"\"\n
+                      ",
+? 
+! Undefined control sequence.
+l.71     "    def Perimeter(self, srcImage):\n
+                                              ",
+? 
+! Undefined control sequence.
+l.72     "        directions = [  5,  6,  7,\n
+                                              ",
+? 
+! Undefined control sequence.
+l.73     "                        4,      0,\n
+                                              ",
+? 
+! Undefined control sequence.
+l.74     "                        3,  2,  1]\n
+                                              ",
+? 
+! Undefined control sequence.
+l.75     "        \n
+                    ",
+? 
+! Undefined control sequence.
+l.76     "        change_j =   [  -1,  0,  1,\n
+                                               ",
+? 
+! Undefined control sequence.
+l.77     "                        -1,      1,\n
+                                               ",
+? 
+! Undefined control sequence.
+l.78     "                        -1,  0,  1]\n
+                                               ",
+? 
+! Undefined control sequence.
+l.79     "        \n
+                    ",
+? 
+! Undefined control sequence.
+l.80     "        change_i =   [  -1, -1, -1,\n
+                                               ",
+? 
+! Undefined control sequence.
+l.81     "                         0,      0,\n
+                                               ",
+? 
+! Undefined control sequence.
+l.82     "                         1,  1,  1]\n
+                                               ",
+? 
+! Undefined control sequence.
+l.83     "        \n
+                    ",
+? 
+! Undefined control sequence.
+l.84 ...zip(directions, range(len(directions))))\n
+                                                  ",
+? 
+! Undefined control sequence.
+l.85 ...start_point = self.getStartPos(srcImage)\n
+                                                  ",
+? 
+! Undefined control sequence.
+l.86     "        curr_point = start_point\n
+                                            ",
+? 
+! Undefined control sequence.
+l.87     "        border = []\n
+                               ",
+? 
+! Undefined control sequence.
+l.88     "        chain = []\n
+                              ",
+? 
+! Undefined control sequence.
+l.89     "        for direction in directions:\n
+                                                ",
+? 
+! Undefined control sequence.
+l.90     "            idx = dir2idx[direction]\n
+                                                ",
+? 
+! Undefined control sequence.
+l.91 ...ge_i[idx], start_point[1]+change_j[idx])\n
+                                                  ",
+? 
+! Interruption.
+<to be read again> 
+                   "
+l.91 ...e_i[idx], start_point[1]+change_j[idx])\n"
+                                                  ,
+? exit
+ 
+Here is how much of TeX's memory you used:
+ 75 strings out of 476191
+ 1313 string characters out of 5812072
+ 307146 words of memory out of 5000000
+ 20909 multiletter control sequences out of 15000+600000
+ 472202 words of font info for 29 fonts, out of 8000000 for 9000
+ 1348 hyphenation exceptions out of 8191
+ 24i,24n,32p,206b,152s stack positions out of 5000i,500n,10000p,200000b,80000s
+No pages of output.
